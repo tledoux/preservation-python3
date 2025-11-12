@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-10-08 11:30+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+
+#: main.py:46
+msgid "main.python, Adapted from Snake Game by Edureka"
+msgstr "Preservación Python, adaptado del juego Snake por Edureka"
+
+#: main.py:47
+msgid "Your Score: "
+msgstr "Tu puntuación: "
+
+#: main.py:74
+msgid "Access rights"
+msgstr "Derechos de acceso"
+
+#: main.py:75
+msgid "Checksum"
+msgstr "Integridad"
+
+#: main.py:76
+msgid "Context information"
+msgstr "Información de contexto"
+
+#: main.py:77
+msgid "Data object"
+msgstr "Objeto de datos"
+
+#: main.py:78
+msgid "Metadata"
+msgstr "Metadata"
+
+#: main.py:83
+msgid "Backup"
+msgstr "Backup"
+
+#: main.py:84
+msgid "Emulation"
+msgstr "Emulación"
+
+#: main.py:85
+msgid "Migration"
+msgstr "Migración"
+
+#: main.py:86
+msgid "Refresh"
+msgstr "Actualizar"
+
+#: main.py:87
+msgid "Tech watch"
+msgstr "Vigilia technologica"
+
+#: main.py:92
+msgid "Broken hardware"
+msgstr "Hardware roto"
+
+#: main.py:93
+msgid "Accidental deletion"
+msgstr "Eliminación accidental"
+
+#: main.py:94
+msgid "Legal issues"
+msgstr "Problemas juridicos"
+
+#: main.py:95
+msgid "Obsolescence"
+msgstr "Obsolescencia"
+
+#: main.py:96
+msgid "Lack of organizational commitment"
+msgstr "Falta de compromiso organizacional"
+
+#: main.py:97
+msgid "Software bugs"
+msgstr "Errores de software"
+
+#: main.py:98
+msgid "Virus attack"
+msgstr "Ataque de virus"
+
+#: main.py:166
+msgid "Welcome to main.python!"
+msgstr "¡Bienvenido a Preservación Python!"
+
+#: main.py:167
+msgid "Collect preservation information."
+msgstr "Recoge información de preservación."
+
+#: main.py:168
+msgid "Avoid data loss and obsolescence."
+msgstr "Evita la pérdida de datos y la obsolescencia."
+
+#: main.py:169
+msgid "Maintain accessibility!"
+msgstr "¡Mantén la accesibilidad!"
+
+#: main.py:170
+msgid "Use the arrow keys or W,A,S,D to move."
+msgstr "Usa las flechas para moverte."
+
+#: main.py:171
+msgid "Press the SPACEBAR to start"
+msgstr "Presiona la barra espaciadora para comenzar"
+
+#: main.py:188
+msgid "Preservation Failure! The digital object is lost."
+msgstr "¡Fallo en la preservación! El objeto digital se ha perdido."
+
+#: main.py:189
+msgid "Press R to Play Again or Q to Quit"
+msgstr "Presiona R para jugar de nuevo o Q para salir"
+
+#: main.py:244
+msgid "Ingest complete. Keep it accessible!"
+msgstr "Ingesta completa. ¡Mantén la accesibilidad!"
+

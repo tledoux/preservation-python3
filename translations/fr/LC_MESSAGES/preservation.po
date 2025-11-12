@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-10-08 11:30+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: main.py:46
+msgid "main.python, Adapted from Snake Game by Edureka"
+msgstr "Le Python Préservationniste, adapté du jeu Snake par Edureka"
+
+#: main.py:47
+msgid "Your Score: "
+msgstr "Votre score : "
+
+#: main.py:74
+msgid "Access rights"
+msgstr "Droits d'accès"
+
+#: main.py:75
+msgid "Checksum"
+msgstr "Intégrité"
+
+#: main.py:76
+msgid "Context information"
+msgstr "Information de contexte"
+
+#: main.py:77
+msgid "Data object"
+msgstr "Objet-donnée"
+
+#: main.py:78
+msgid "Metadata"
+msgstr "Métadonnées"
+
+#: main.py:83
+msgid "Backup"
+msgstr "Sauvegarde"
+
+#: main.py:84
+msgid "Emulation"
+msgstr "Émulation"
+
+#: main.py:85
+msgid "Migration"
+msgstr "Migration"
+
+#: main.py:86
+msgid "Refresh"
+msgstr "Rafraîchissement"
+
+#: main.py:87
+msgid "Tech watch"
+msgstr "Veille technologique"
+
+#: main.py:92
+msgid "Broken hardware"
+msgstr "Panne matérielle"
+
+#: main.py:93
+msgid "Accidental deletion"
+msgstr "Suppression accidentelle"
+
+#: main.py:94
+msgid "Legal issues"
+msgstr "Problèmes juridiques"
+
+#: main.py:95
+msgid "Obsolescence"
+msgstr "Obsolescence"
+
+#: main.py:96
+msgid "Lack of organizational commitment"
+msgstr "Manque d'engagement organisationnel"
+
+#: main.py:97
+msgid "Software bugs"
+msgstr "Bugs logiciels"
+
+#: main.py:98
+msgid "Virus attack"
+msgstr "Piratage informatique"
+
+#: main.py:166
+msgid "Welcome to main.python!"
+msgstr "Bienvenue dans 'Le Python Préservationniste' !"
+
+#: main.py:167
+msgid "Collect preservation information."
+msgstr "Récupérez l'information de préservation"
+
+#: main.py:168
+msgid "Avoid data loss and obsolescence."
+msgstr "Évitez les pertes de données et l'obsolescence"
+
+#: main.py:169
+msgid "Maintain accessibility!"
+msgstr "Maintenez l'accès !"
+
+#: main.py:170
+msgid "Use the arrow keys or W,A,S,D to move."
+msgstr "Utilisez les flèches pour vous déplacer"
+
+#: main.py:165
+msgid "Press the SPACEBAR to start"
+msgstr "Appuyez sur la barre d'espace pour commencer"
+
+#: main.py:187
+msgid "Preservation Failure! The digital object is lost."
+msgstr "Erreur de préservation ! Les objets numériques sont perdus."
+
+#: main.py:188
+msgid "Press R to Play Again or Q to Quit"
+msgstr "Appuyez sur R pour rejouer ou Q pour quitter."
+
+#: main.py:210
+msgid "Ingest complete. Keep it accessible!"
+msgstr "Versement complet. Maintenez-le accessible !"
+
