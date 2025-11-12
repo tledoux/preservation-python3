@@ -1,0 +1,102 @@
+name: Build multiple platform applications workflow
+
+on:
+    push:
+      # Sequence of patterns matched against refs/tags
+      tags:
+        - 'v[0-9]+.[0-9]+.[0-9]+'
+
+env:
+    BIN_NAME: preservation-python3
+
+jobs:
+    dist:
+        name: Dist
+        runs-on: ${{ matrix.os }}
+        strategy:
+          matrix:
+            # See: https://github.com/actions/runner-images?tab=readme-ov-file#available-images
+            build: [x86_64-linux, x86_64-windows] #, x86_64-macos, arm64-macos
+            include:
+              - build: x86_64-linux
+                os: ubuntu-latest
+                target: x86_64-ubuntu
+              # architecture: 'x64'
+              - build: x86_64-windows
+                os: windows-latest
+                target: x86_64-windows
+              #- build: x86_64-macos
+              #  os: macos-13
+              #  target: x86_64-macos-13
+              #- build:  arm64-macos
+              #  os: macos-latest
+              #  target: arm_64-darwin
+              #  architecture: 'arm64'
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: Set up Python 3.13
+              uses: actions/setup-python@v5
+              with:
+                python-version: "3.13"
+                architecture: "x64"
+            - name: Install dependencies
+              shell: bash
+              run: |
+                python -m pip install --upgrade pip
+                pip install pyinstaller
+                if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+            - name: Run Pyinstaller
+              shell: bash
+              run: |
+                pyinstaller preservation.spec
+            - name: Rename by target
+              shell: bash
+              run: |
+                if [ "${{ matrix.os }}" = "windows-latest" ]; then
+                  mv "dist/$BIN_NAME.exe" "dist/$BIN_NAME-${{ matrix.target }}.exe"
+                else
+                  mv "dist/$BIN_NAME" "dist/$BIN_NAME-${{ matrix.target }}"
+                fi
+            - uses: actions/upload-artifact@v4
+              with:
+                name: bins-${{ matrix.target }}
+                path: dist
+
+    publish:
+        name: Publish
+        needs: [dist]
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+        steps:
+            - name: Checkout sources
+              uses: actions/checkout@v4
+            - name: Generate RELEASE.md
+              uses: CSchoel/release-notes-from-changelog@v1
+            - name: download all artefacts
+              uses: actions/download-artifact@v4
+              with:
+                path: dist
+                pattern: bins-*
+                merge-multiple: true
+            # actions/create-release not maintained anymore
+            # switch to ncipollo/release-action
+            - name: create release
+              id: create-release
+              uses: ncipollo/release-action@v1
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                #generateReleaseNotes: true
+                bodyFile: RELEASE.md
+                artifacts: "dist/*"
+                #artifactContentType: application/zip
+                draft: false
+                prerelease: false
+            - name: Generate summary
+              run: |
+                  echo "### Success in release ${{ github.ref }}" >> $GITHUB_STEP_SUMMARY
+                  echo "Release url is ${{ steps.create-release.outputs.html_url }}" >> $GITHUB_STEP_SUMMARY
+                  echo "" >> $GITHUB_STEP_SUMMARY # this is a blank line                  
+
