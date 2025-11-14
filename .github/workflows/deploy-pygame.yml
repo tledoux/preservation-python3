@@ -5,15 +5,17 @@ on:
     tags:
       - 'v[0-9]+.[0-9]+.[0-9]+'
   workflow_dispatch:
+permissions:
+  contents: write
 
 jobs:
   build-pygbag:
     name: Preservation-python3 Game
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout 🛎️
       uses: actions/checkout@v4
+
     - name: Install and Build 🔧
       run: |
             echo "Attempting to install pygbag"
@@ -23,8 +25,10 @@ jobs:
             python -m pygbag --build .
             echo "Successfully build the game and compiled to WebAssembly"
 
-    - name : Upload to GitHub pages branch gh-pages 🚀
-      uses: JamesIves/github-pages-deploy-action@4.7.4
+    - name: Upload to GitHub pages branch gh-pages 🚀
+      uses: JamesIves/github-pages-deploy-action@v4.7.4
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         branch: gh-pages
         folder: build/web
