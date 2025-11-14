@@ -62,7 +62,10 @@ lang = gettext.translation(
 )
 # lang.install()
 _ = lang.gettext
-# print(f"Loaded translation for locale: {current_locale}")
+if running_in_browser():
+    platform.console.log(f"Loaded translation for locale: {current_locale}")  # type: ignore
+else:
+    print(f"Loaded translation for locale: {current_locale}")
 
 # Initialize pygame
 pygame.init()
