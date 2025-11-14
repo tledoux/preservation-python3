@@ -1,0 +1,30 @@
+name: Build Preservation Python3 with Pygbag
+on:
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+  workflow_dispatch:
+
+jobs:
+  build-pygbag:
+    name: Preservation-python3 Game
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout 🛎️
+      uses: actions/checkout@v4
+    - name: Install and Build 🔧
+      run: |
+            echo "Attempting to install pygbag"
+            python -m pip install pygbag
+            echo "Successfully installed pygbag"
+            echo "Attempting to build the game"
+            python -m pygbag --build .
+            echo "Successfully build the game and compiled to WebAssembly"
+
+    - name : Upload to GitHub pages branch gh-pages 🚀
+      uses: JamesIves/github-pages-deploy-action@4
+      with:
+        branch: gh-pages
+        folder: build/web

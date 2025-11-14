@@ -1,15 +1,16 @@
 import asyncio
+import ctypes
 import gettext
 import locale
 import os
+import platform
 import pygame
 import random
 import sys
-import platform
 from snake import Direction, Snake
 
 __appname__ = "Preservation Python"
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 
 def resource_path(relative_path: str):
@@ -23,6 +24,10 @@ def running_in_browser():
     return sys.platform == "emscripten"
 
 
+def running_in_windows():
+    return sys.platform == "win32"
+
+
 # Initialize gettext
 __domain__ = "preservation"
 __locale_dir__ = "translations"
@@ -32,9 +37,16 @@ __locale_dir__ = "translations"
 if running_in_browser():
     current_locale = platform.window.navigator.language  # type: ignore
     platform.console.log(f"Detected browser locale: {current_locale}")  # type: ignore
-else:
-    current_locale, encoding = locale.getlocale()
+elif running_in_windows():
+    # getlocale doesn't work properly on Windows, so we use ctypes to get the locale
+    kernel32 = ctypes.windll.kernel32
+    current_locale = locale.windows_locale.get(kernel32.GetUserDefaultLangID(), "en_US")
     assert current_locale is not None, "Could not determine the current locale."
+    print(f"Found locale in Windows: {current_locale}")
+else:
+    current_locale = locale.getlocale()[0]
+    assert current_locale is not None, "Could not determine the current locale."
+    print(f"Found locale: {current_locale}")
 if "_" in current_locale:
     # Only extract the language, not the country
     current_locale = current_locale.split("_")[0]

@@ -9,7 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Deploy the WASM version to github-pages
+
 ### Changed
+
+- Don't use getlocale() on Windows platform
+- Simplify the generation of the Windows executable
 
 ### Removed
 
