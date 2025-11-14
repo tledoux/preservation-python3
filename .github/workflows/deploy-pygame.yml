@@ -24,7 +24,7 @@ jobs:
             echo "Successfully build the game and compiled to WebAssembly"
 
     - name : Upload to GitHub pages branch gh-pages 🚀
-      uses: JamesIves/github-pages-deploy-action@4
+      uses: JamesIves/github-pages-deploy-action@4.7.4
       with:
         branch: gh-pages
         folder: build/web
