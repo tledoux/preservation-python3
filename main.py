@@ -9,7 +9,7 @@ import random
 import sys
 from snake import Direction, Snake
 
-__appname__ = "Preservation Python"
+__appname__ = "Preservation Python3"
 __version__ = "1.1.0"
 
 
