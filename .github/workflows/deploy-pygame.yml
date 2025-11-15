@@ -16,6 +16,14 @@ jobs:
     - name: Checkout 🛎️
       uses: actions/checkout@v4
 
+    #  Add a step to compile the .po files to .mo files
+    - name: Compile translation files 🈴
+      run: |
+        for po_file in locales/*/LC_MESSAGES/*.po; do
+          mo_file="${po_file%.po}.mo"
+          msgfmt "$po_file" -o "$mo_file"
+        done
+
     - name: Install and Build 🔧
       run: |
             echo "Attempting to install pygbag"
