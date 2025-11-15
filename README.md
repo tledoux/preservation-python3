@@ -4,7 +4,7 @@
 [![fr](https://img.shields.io/badge/README-fr-green.svg)](https://github.com/tledoux/preservation-python3/blob/main/README.fr.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub issues](https://img.shields.io/github/issues/tledoux/preservation-python3.svg)](https://github.com/tledoux/preservation-python3/issues "Open issues on GitHub")
-![GitHub Downloads (latest release)](https://img.shields.io/github/downloads/tledoux/preservation-python3/latest/total "Latest release downloads")
+[![GitHub Downloads (latest release)](https://img.shields.io/github/downloads/tledoux/preservation-python3/latest/total )](https://github.com/tledoux/preservation-python3/releases/latest "Latest release downloads")
 [![Play on Chrome](https://img.shields.io/badge/Play_On-Chrome-blue?color=blue)](https://tledoux.github.io/preservation-python3/index.html)
 
 

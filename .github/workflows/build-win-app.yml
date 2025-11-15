@@ -42,13 +42,10 @@ jobs:
                 architecture: "x64"
             - name: Install dependencies
               run: pip install -r requirements.txt pyinstaller
-            #  Add a step to compile the .po files to .mo files
             - name: Compile translation files
               run: |
-                for po_file in locales/*/LC_MESSAGES/*.po; do
-                  mo_file="${po_file%.po}.mo"
-                  msgfmt "$po_file" -o "$mo_file"
-                done
+                    python -m pip install babel
+                    pybabel compile -d translations -D preservation
             - name: Run Pyinstaller
               run: pyinstaller preservation.spec
             - name: Rename by target
