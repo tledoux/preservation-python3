@@ -17,8 +17,8 @@ msgstr ""
 
 
 #: main.py:46
-msgid "main.python, Adapted from Snake Game by Edureka"
-msgstr "Preservación Python, adaptado del juego Snake por Edureka"
+msgid "Preservation Python3, Adapted from Snake Game by Edureka"
+msgstr "Preservación Python3, adaptado del juego Snake por Edureka"
 
 #: main.py:47
 msgid "Your Score: "
@@ -93,8 +93,8 @@ msgid "Virus attack"
 msgstr "Ataque de virus"
 
 #: main.py:166
-msgid "Welcome to main.python!"
-msgstr "¡Bienvenido a Preservación Python!"
+msgid "Welcome to Preservation Python3!"
+msgstr "¡Bienvenido a Preservación Python3!"
 
 #: main.py:167
 msgid "Collect preservation information."

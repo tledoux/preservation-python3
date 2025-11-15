@@ -4,7 +4,7 @@
 [![fr](https://img.shields.io/badge/README-fr-green.svg)](https://github.com/tledoux/preservation-python3/blob/main/README.fr.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub issues](https://img.shields.io/github/issues/tledoux/preservation-python3.svg)](https://github.com/tledoux/preservation-python3/issues "Open issues on GitHub")
-[![GitHub Downloads (latest release)](https://img.shields.io/github/downloads/tledoux/preservation-python3/latest/total )](https://github.com/tledoux/preservation-python3/releases/latest "Déchargements dernière version")
+[![GitHub Downloads (latest release)](https://img.shields.io/github/downloads/tledoux/preservation-python3/latest/total)](https://github.com/tledoux/preservation-python3/releases/latest "Déchargements dernière version")
 [![Jouer sur Chrome](https://img.shields.io/badge/Jouer_sur-Chrome-blue?color=blue)](https://tledoux.github.io/preservation-python3/index.html)
 
 _Preservation Python3 est un jeu du type **snake** (serpent) où le joueur contrôle un python qui grandit sans arrêt (même si vous ne vous en apercevez pas toujours), une métaphore pour l'obsolescence et la perte de données. Le python doit ingérer de l'information de contenu et de préservation tout en évitant les éléments qui accélère la perte d'information. Si le python survit un certain temps, les éléments requis vont changer en des actions de préservation nécessaires pour maintenir un accès permanent._
