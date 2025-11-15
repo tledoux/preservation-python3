@@ -1,9 +1,9 @@
 # Preservation Python3
 
-[![en](https://img.shields.io/badge/README-en-red.svg)](https://github.com/tledoux/preservation-python3/blob/main/README.md)
-[![fr](https://img.shields.io/badge/README-fr-green.svg)](https://github.com/tledoux/preservation-python3/blob/main/README.fr.md)
+[![en](https://img.shields.io/badge/README-en-red.svg)](https://github.com/tledoux/preservation-python3/blob/main/README.md) [![fr](https://img.shields.io/badge/README-fr-green.svg)](https://github.com/tledoux/preservation-python3/blob/main/README.fr.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub issues](https://img.shields.io/github/issues/tledoux/preservation-python3.svg)](https://github.com/tledoux/preservation-python3/issues "Open issues on GitHub")
+![](https://img.shields.io/github/release/tledoux/preservation-python3.svg)
 [![GitHub Downloads (latest release)](https://img.shields.io/github/downloads/tledoux/preservation-python3/latest/total)](https://github.com/tledoux/preservation-python3/releases/latest "Latest release downloads")
 [![Play on Chrome](https://img.shields.io/badge/Play_On-Chrome-blue?color=blue)](https://tledoux.github.io/preservation-python3/index.html)
 
@@ -114,7 +114,7 @@ _The executable will be generated in the `dist` directory._
 
 ## Contributing
 
-If you wish to contribute, read the file [CONTRIBUTING.md] to know how.
+If you wish to contribute, read the file [CONTRIBUTING.md](CONTRIBUTING.md) to know how.
 
 ## Credits
 
