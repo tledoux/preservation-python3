@@ -8,9 +8,10 @@
 [![Play on Chrome](https://img.shields.io/badge/Play_On-Chrome-blue?color=blue)](https://tledoux.github.io/preservation-python3/index.html)
 
 
-_Preservation Python is a snake-type game where the player controls a continually shrinking python (though you might not always notice!), a metaphor for obsolescence and data loss. The python must ingest, pun intended, content and preservation information while avoiding elements that accelerate data loss. If the python survives a certain length of time, the required elements will change into preservation actions needed to maintain continued access._
+_Preservation Python3 is a snake-type game where the player controls a continually shrinking python (though you might not always notice!), a metaphor for obsolescence and data loss. The python must ingest, pun intended, content and preservation information while avoiding elements that accelerate data loss. If the python survives a certain length of time, the required elements will change into preservation actions needed to maintain continued access._
 
 _The game is meant to introduce the elements of an OAIS Archival Information Package to beginners in a fun and interactive way, as well as to present digital preservation as a continuous activity. The fast-paced nature of a snake game also encourages the player to make decisions on which elements they prefer to prioritize._
+
 _The game is directly derived from [Preservation Python](https://github.com/archivistnathan/preservation-python)._
 
 ## Ingest Preservation Information and avoid preservation failure!
@@ -65,7 +66,7 @@ _The game is directly derived from [Preservation Python](https://github.com/arch
 
 _Each PDI or preservation action increases your score. Obsolescence and data loss will halve your current score._
 
-__The game ends when your score goes below 1 or you hit the walls or yourself.__
+__The game ends when your score goes below 1 or when you hit the walls or yourself.__
 
 ## Installations
 

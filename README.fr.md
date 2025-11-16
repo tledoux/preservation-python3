@@ -65,7 +65,7 @@ _Ce jeu est directement dérivé de [Preservation Python](https://github.com/arc
 
 _Chaque PDI ou action de préservation augmente votre score. L'obsolescence ou la perte de données divise par deux votre score._
 
-_Le jeu finit quand votre score descend sous la barre de 1 ou si vous heurtez les murs ou vous-même._
+_Le jeu finit lorsque votre score descend en dessous de 1 ou si vous heurtez les murs ou vous-même._
 
 ## Installations
 

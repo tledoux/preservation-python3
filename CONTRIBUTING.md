@@ -11,7 +11,11 @@
 2. If you're looking for an open issue to fix, check out
    labels `help wanted` and `good first issue` on GitHub.
 
-3. If you plan to work on an issue open not by you, write about your
+3. Another valuable contribution is adding new translations by
+   adding a new directory in the `translations`, copying an
+   example `.po` file and providing new translations.
+
+4. If you plan to work on an issue open not by you, write about your
    intention in the comments *before* you start working.
 
 
@@ -30,7 +34,7 @@
 ### Release management
 
 1. Follow the [SemVer](https://semver.org/) conventions for the release number.
-2. Update the version in [file_version_info](https://github.com/tledoux/preservation-python3/blob/main/file_version_info.txt).
+2. Update the version in [file_version_info](https://github.com/tledoux/preservation-python3/blob/main/file_version_info.txt) as well as the [main.py](https://github.com/tledoux/preservation-python3/blob/main/main.py).
 2. Update the [CHANGELOG](https://github.com/tledoux/preservation-python3/blob/main/CHANGELOG.md).
 3. Update the [README](https://github.com/tledoux/preservation-python3/blob/main/README.md) if needed.
 4. Merge the changes to the `main` branch.

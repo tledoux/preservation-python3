@@ -16,8 +16,8 @@ msgstr ""
 
 
 #: main.py:46
-msgid "Preservation Python3, Adapted from Snake Game by Edureka"
-msgstr "Le Python3 Préservationniste, adapté du jeu Snake par Edureka"
+msgid "Preservation Python3, a multilingual version of the Preservation Python game"
+msgstr "Le Python3 Préservationniste, une version multilingue du jeu Preservation Python"
 
 #: main.py:47
 msgid "Your Score: "

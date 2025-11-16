@@ -10,7 +10,7 @@ import sys
 from snake import Direction, Snake
 
 __appname__ = "Preservation Python3"
-__version__ = "1.2.0"
+__version__ = "1.3.0"
 
 
 def resource_path(relative_path: str):
@@ -85,7 +85,7 @@ white_background = (255, 255, 255)
 screen_width, screen_height = 1200, 800
 block_size = 40
 screen = pygame.display.set_mode((screen_width, screen_height))
-pygame.display.set_caption(_("Preservation Python3, Adapted from Snake Game by Edureka"))
+pygame.display.set_caption(_("Preservation Python3, a multilingual version of the Preservation Python game"))
 prefix_score = _("Your Score: ")
 bottom_message = ""
 clock = pygame.time.Clock()
